@@ -72,7 +72,7 @@ export default function Weather() {
                 <ul>
                   <li>Humidity: {weatherData.humidity}%</li>
                   <li>Wind: {weatherData.wind}km/h</li>
-                  <li>Pressure : {weatherData.pressure}mbar </li>
+                  <li>Pressure: {weatherData.pressure}mbar </li>
                 </ul>
               </div>
             </div>
@@ -81,7 +81,6 @@ export default function Weather() {
       </div>
     );
   } else {
-    const apiKey = "1a915758c5fb84c9ee7377f6039e76a7";
     let city = "Nicosia";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1a915758c5fb84c9ee7377f6039e76a7&units=metric`;
 
