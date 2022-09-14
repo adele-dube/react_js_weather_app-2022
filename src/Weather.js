@@ -14,6 +14,7 @@ export default function Weather() {
                   type="search"
                   placeholder="Enter a city..."
                   className="form-control"
+                  autoFocus="on"
                 />
               </div>
 
@@ -21,7 +22,7 @@ export default function Weather() {
                 <input
                   type="submit"
                   value="search"
-                  className="btn btn-success"
+                  className="btn btn-success w-100"
                 />
               </div>
             </div>
@@ -42,7 +43,8 @@ export default function Weather() {
                 className="main-icon"
               />
 
-              <div>31°C</div>
+              <span className="temperature">31</span>
+              <span className="unit">°C</span>
             </div>
 
             <div className="col-6">

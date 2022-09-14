@@ -1,19 +1,62 @@
 .container {
-  text-align: center;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  justify-content: center;
+  background: linear-gradient(
+    111.5deg,
+    rgb(228, 247, 255) 21.9%,
+    rgb(255, 216, 194) 92.2%
+  );
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 750px;
 }
 
 #main-card {
-  /* color: rgba(72, 72, 74, 1); */
+  color: rgba(72, 72, 74, 1);
+  background: linear-gradient(
+    111.5deg,
+    rgb(243, 250, 253) 15%,
+    rgb(252, 236, 227) 75%
+  );
   font-family: Arial, Helvetica, sans-serif;
   margin: 25px auto;
-  max-height: 800px;
-  max-width: 800px;
+  margin-bottom: 5px;
+  max-height: 650px;
+  max-width: 650px;
 }
 
-.main-icon {
-  width: 100px;
+.container form {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container li {
+  font-size: 10px;
+  list-style: none;
+}
+
+.container .main-icon {
+  width: 64px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.container .temperature {
+  color: rgb(44, 44, 44);
+  font-weight: bold;
+  font-size: 64px;
+  vertical-align: middle;
+}
+
+.container .unit {
+  position: relative;
+  top: -16px;
 }
