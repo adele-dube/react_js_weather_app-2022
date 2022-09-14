@@ -28,6 +28,17 @@
   margin-bottom: 20px;
 }
 
+.container .search-button {
+  background-color: rgb(147, 207, 233);
+  border-color: rgb(147, 207, 233);
+  transition: 150ms ease-in-out;
+}
+
+.container .search-button:hover {
+  background-color: rgb(117, 176, 201);
+  border-color: rgb(117, 176, 201);
+}
+
 .container h1 {
   font-size: 20px;
   line-height: 30px;
@@ -59,4 +70,9 @@
 .container .unit {
   position: relative;
   top: -16px;
+}
+
+.container .weather-details {
+  position: relative;
+  top: 24px;
 }
