@@ -12,7 +12,7 @@ export default function App() {
         <p className="footer">
           <a
             href="https://github.com/adele-dube/react_js_weather_app-2022"
-            id="footer-link"
+            className="links"
             target="_blank"
             rel="noreferrer"
           >

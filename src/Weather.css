@@ -76,3 +76,12 @@
   position: relative;
   top: 24px;
 }
+
+.links {
+  color: rgb(117, 176, 201);
+  transition: 150ms ease-in-out;
+}
+
+.links:hover {
+  color: rgb(147, 207, 233);
+}
