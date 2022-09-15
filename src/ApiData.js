@@ -17,7 +17,7 @@ export default function ApiData(props) {
 
       <div className="row">
         <div className="col-6">
-          <WeatherIcon code={props.data.icon} className="main-icon" />
+          <WeatherIcon code={props.data.icon} size={64} className="main-icon" />
 
           <MainTemperature celcius={props.data.temperature} />
         </div>
