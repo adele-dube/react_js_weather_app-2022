@@ -19,8 +19,7 @@ export default function Weather(props) {
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       icon: response.data.weather[0].icon,
-      iconUrl:
-        "https://cdn3.iconfinder.com/data/icons/weather-260/200/cloudy_day-1024.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       pressure: response.data.main.pressure,
       wind: response.data.wind.speed,
     });

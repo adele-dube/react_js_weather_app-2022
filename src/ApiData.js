@@ -2,6 +2,8 @@ import React from "react";
 import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
+import { WiDaySunny } from "weather-icons-react";
 
 export default function ApiData(props) {
   return (
@@ -15,11 +17,7 @@ export default function ApiData(props) {
 
       <div className="row">
         <div className="col-6">
-          <img
-            src={props.data.iconUrl}
-            alt={props.data.description}
-            className="main-icon"
-          />
+          <WeatherIcon code={props.data.icon} className="main-icon" />
 
           <span className="temperature">{props.data.temperature}</span>
           <span className="unit">°C</span>
