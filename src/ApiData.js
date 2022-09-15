@@ -3,7 +3,7 @@ import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
-import { WiDaySunny } from "weather-icons-react";
+import MainTemperature from "./MainTemperature";
 
 export default function ApiData(props) {
   return (
@@ -19,8 +19,7 @@ export default function ApiData(props) {
         <div className="col-6">
           <WeatherIcon code={props.data.icon} className="main-icon" />
 
-          <span className="temperature">{props.data.temperature}</span>
-          <span className="unit">°C</span>
+          <MainTemperature celcius={props.data.temperature} />
         </div>
 
         <div className="col-6 weather-details">
