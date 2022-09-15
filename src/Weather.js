@@ -3,6 +3,7 @@ import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import ApiData from "./ApiData";
+import WeatherForecst from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -68,6 +69,8 @@ export default function Weather(props) {
             </form>
 
             <ApiData data={weatherData} />
+
+            <WeatherForecst />
           </div>
         </div>
       </div>
