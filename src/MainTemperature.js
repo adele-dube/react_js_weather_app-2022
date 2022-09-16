@@ -21,9 +21,9 @@ export default function MainTemperature(props) {
     setUnit("celcius");
   }
 
-  function tempFahrenheit() {
-    return Math.round((props.celcius * 9) / 5 + 32);
-  }
+  // function tempFahrenheit() {
+  //   return Math.round((props.celcius * 9) / 5 + 32);
+  // }
 
   if (unit === "celcius") {
     return (
