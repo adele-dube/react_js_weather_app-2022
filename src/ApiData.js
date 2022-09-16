@@ -7,7 +7,7 @@ import MainTemperature from "./MainTemperature";
 
 export default function ApiData(props) {
   return (
-    <div>
+    <div className="current-weather-section">
       <h1>{props.data.city}</h1>
 
       <ul>

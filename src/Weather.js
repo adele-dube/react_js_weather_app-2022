@@ -46,14 +46,14 @@ export default function Weather(props) {
     return (
       <div className="container">
         <div className="card" id="main-card">
-          <div className="card-body shadow">
+          <div className="card-body shadow pb-4">
             <form onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-9">
                   <input
                     type="search"
                     placeholder="Enter a city..."
-                    className="form-control"
+                    className="form-control form-search-input"
                     autoFocus="on"
                     onChange={handleInput}
                   />
@@ -69,9 +69,13 @@ export default function Weather(props) {
               </div>
             </form>
 
-            <ApiData data={weatherData} />
+            <div className="current-weather-card">
+              <ApiData data={weatherData} />
+            </div>
 
-            <WeatherForecst coordinates={weatherData.coordinates} />
+            <div className="forecast-card">
+              <WeatherForecst coordinates={weatherData.coordinates} />
+            </div>
           </div>
         </div>
       </div>

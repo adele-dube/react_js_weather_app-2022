@@ -4,7 +4,7 @@
     rgb(228, 247, 255) 21.9%,
     rgb(255, 216, 194) 92.2%
   );
-  padding: 10px;
+  padding: 5px;
   border-radius: 6px;
   max-width: 750px;
 }
@@ -31,6 +31,7 @@
 .container .search-button {
   background-color: rgb(147, 207, 233);
   border-color: rgb(147, 207, 233);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   transition: 150ms ease-in-out;
 }
 
@@ -84,4 +85,29 @@
 
 .links:hover {
   color: rgb(147, 207, 233);
+}
+
+.form-search-input {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.current-weather-card {
+  background-color: rgba(255, 248, 244, 0.5);
+  border: 2px solid rgb(255, 244, 238);
+  border-radius: 6px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.current-weather-section {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.forecast-card {
+  background-color: rgba(255, 248, 244, 0.5);
+  border: 2px solid rgb(255, 244, 238);
+  border-radius: 6px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
