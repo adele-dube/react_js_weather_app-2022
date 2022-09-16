@@ -3,7 +3,7 @@ import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import ApiData from "./ApiData";
-import WeatherForecast from "./WeatherForecast";
+import WeatherForecst from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -71,7 +71,7 @@ export default function Weather(props) {
 
             <ApiData data={weatherData} />
 
-            <WeatherForecast coordinates={weatherData.coordinates} />
+            <WeatherForecst coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>
