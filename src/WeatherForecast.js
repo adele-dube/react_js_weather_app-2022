@@ -3,27 +3,35 @@ import "./Weather.css";
 import "./WeatherForecast.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
-import WeatherForecstDay from "./WeatherForecastDay";
+import WeatherForecastDay from "./WeatherForecastDay";
 
-export default function WeatherForecst(props) {
+export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
-  let [forecast, setForecast] = useState(null);
+  let [forecastData, setForecastData] = useState({ loaded: false });
 
   function handleForecast(response) {
-    // console.log(response.data.daily);
+    console.log(response.data.daily[0].weather[0].icon);
+    //console.log(response.data.daily[0].temp);
 
-    setForecast(response.data.daily);
+    setForecastData({
+      date: new Date(response.data.daily[0].dt * 1000),
+      minTemperature: Math.round(response.data.daily[0].temp.min),
+      maxTemperature: Math.round(response.data.daily[0].temp.max),
+      icon: response.data.daily[0].weather[0].icon,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.daily[0].weather[0].icon}@2x.png`,
+    });
+
     setLoaded(true);
   }
 
   if (loaded) {
-    console.log(forecast);
+    //console.log(forecastData);
 
     return (
       <div className="weather-forecast">
         <div className="row">
           <div className="col">
-            <WeatherForecstDay data={forecast[0]} />
+            <WeatherForecastDay data={forecastData} />
           </div>
         </div>
       </div>
