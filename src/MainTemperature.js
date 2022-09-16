@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 
+//IMPORTANT!!!!
+//Temperature Conversion is temporarily disabled for this project
+//Units set to Celcius
+
 export default function MainTemperature(props) {
   let [unit, setUnit] = useState("celcius");
 
-  function showFahrenheit(event) {
-    event.preventDefault();
+  // function showFahrenheit(event) {
+  //   event.preventDefault();
 
-    setUnit("fahrenheit");
-  }
+  //   setUnit("fahrenheit");
+  // }
 
   function showCelcius(event) {
     event.preventDefault();
@@ -20,10 +24,6 @@ export default function MainTemperature(props) {
   function tempFahrenheit() {
     return Math.round((props.celcius * 9) / 5 + 32);
   }
-
-  //IMPORTANT!!!!
-  //Temperature Conversion is temporarily disabled for this project
-  //Units set to Celcius
 
   if (unit === "celcius") {
     return (
@@ -41,7 +41,7 @@ export default function MainTemperature(props) {
   } else {
     return (
       <span>
-        <span className="temperature">{tempFahrenheit()}</span>
+        {/* <span className="temperature">{tempFahrenheit()}</span> */}
         <span className="unit">
           <a href="/" className="links" onClick={showCelcius}>
             °C
