@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Weather.css";
 import "./WeatherForecast.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -18,7 +18,7 @@ export default function WeatherForecstDay(props) {
     <div>
       <div className="weather-forecast-day">{day()}</div>
 
-      <WeatherIcon code={props.data.weather[0].icon} size={56} />
+      <WeatherIcon code={props.data.weather[0].icon} size={40} />
 
       <div className="min-max-temperature">
         <span className="min-temperature">
