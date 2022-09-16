@@ -21,15 +21,20 @@ export default function MainTemperature(props) {
     return Math.round((props.celcius * 9) / 5 + 32);
   }
 
+  //IMPORTANT!!!!
+  //Temperature Conversion is temporarily disabled for this project
+  //Units set to Celcius
+
   if (unit === "celcius") {
     return (
       <span>
         <span className="temperature">{props.celcius}</span>
         <span className="unit">
-          °C |{" "}
+          °C
+          {/* |{" "}
           <a href="/" className="links" onClick={showFahrenheit}>
             °F
-          </a>
+          </a> */}
         </span>
       </span>
     );
@@ -41,7 +46,7 @@ export default function MainTemperature(props) {
           <a href="/" className="links" onClick={showCelcius}>
             °C
           </a>{" "}
-          | °F
+          {/* | °F */}
         </span>
       </span>
     );
